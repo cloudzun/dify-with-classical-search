@@ -1,5 +1,6 @@
-name: meli
+# name: meli
 # https://www.meilisearch.com/docs/learn/configuration/instance_options
+version: '3'
 services:
   meilisearch:
     image: getmeili/meilisearch:v1.8.0
