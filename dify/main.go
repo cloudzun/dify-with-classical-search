@@ -62,7 +62,7 @@ func GetSearchResult(search string, count int, indexes string, page int, token s
 	}
 
 	var data = strings.NewReader(string(payload))
-	req, err := http.NewRequest("POST", "http://localhost:7700/multi-search", data)
+	req, err := http.NewRequest("POST", "http://172.17.0.1:7700/multi-search", data)
 	if err != nil {
 		return result, err
 	}
